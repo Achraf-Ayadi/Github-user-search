@@ -10,8 +10,8 @@ import { BrowserRouter as Router } from 'react-router-dom'
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
-      domain={process.env.REACT_APP_YOUR_DOMAIN}
-      clientId={process.env.REACT_APP_YOUR_CLIENT_ID}
+      domain='dev - n-o5zgg7.us.auth0.com'
+      clientId='qRuxLo2xxhfjC2YIzB1IqmTQaIWFKmcl'
       redirectUri={window.location.origin}
       cacheLocation='localstorage'
     >
