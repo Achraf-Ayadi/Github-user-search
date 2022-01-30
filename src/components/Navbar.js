@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <Wrapper>
-      {isLogin && user.picture && <img src={user.picture} alt='userPicture' />}
+      {isLogin && user.picture && <img src={user.picture} />}
       {isLogin && user.name && (
         <h4>
           welcome,<strong>{user.name.toUpperCase()}</strong>

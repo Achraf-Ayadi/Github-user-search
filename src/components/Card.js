@@ -22,23 +22,28 @@ const Card = () => {
           <img src={avatar_url} alt={name} />
           <div>
             <h4>{name}</h4>
-            <p>@{twitter_username || 'john_doe'}</p>
+            {/* <p>@{twitter_username || 'Achraf Ayadi'}</p> */}
           </div>
           <a href={html_url}>follow</a>
         </header>
         <p className='bio'>{bio}</p>
         <div className='links'>
-          <p>
-            <MdBusiness />
-            {company}
-          </p>
+          {company ? (
+            <p>
+              <MdBusiness />
+              {company}
+            </p>
+          ) : null}
+
           <p>
             <MdLocationOn />
             {location}
           </p>
-          <p>
-            <MdLink /> {blog}
-          </p>
+          {blog ? (
+            <p>
+              <MdLink /> {blog}
+            </p>
+          ) : null}
         </div>
       </Wrapper>
     </section>
